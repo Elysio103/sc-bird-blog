@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>SC Birdwatching Blog | Newsletter</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="nav-items"><a href="page-1.html">Home</a></div>
+        <div class="nav-items"><a href="page-2.html">Birds</a></div>
+        <div class="nav-items"><a href="page-3.html" class="active">Subscribe</a></div>
+        <div class="nav-items"><a href="page-4.html">Citation</a></div>
+        <img class="bird-logo" src="logo/logo.png" alt="SC Bird Watching">
+    </div>
+    <h1>Subscribe to our Newsletter!</h1>
+    <hr class="divider">
+    <div class="bird-newsletter-container">
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add User</legend>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="first_last_name">
+                </div>
+                <div>
+                    <label for="email">E-Mail</label>
+                    <input type="text" id="email" name="email_address">
+                </div>
+                <div>
+                    <label for="types">Which types of birds do you want to see?</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="backyard" name="backyard_birds">
+                    <label for="backyard">Backyard Birds</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="forest" name="forest_birds">
+                    <label for="forest">Forest Birds</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="sea" name="sea_birds">
+                    <label for="sea">Coastal/Sea Birds</label>
+                </div>
+                <div>
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comment_box"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+        <img class="bird-photo-newsletter" src="bird-pics/house-sparrow.jpeg" alt="House Sparrow">
+    </div>
+    <p id="note">
+        This doesn't really do anything. I don't want e-mails for this quite yet, haha.
+    </p>
+    <hr class="divider">
+    <div class="copyright">
+        <p>
+            Copyright &#169; Chris Drake 2025
+        </p>
+    </div>
+</body>
+</html>
